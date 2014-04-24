@@ -1,7 +1,7 @@
 /**
  * Dependency: http://glench.github.io/fuzzyset.js/
  * Version: 0.0.1a
- * Usage: <fuzz-email class="myclass" maxlength="100" emails="['gmail','yahoo','aol','hotmail','msn']" required></fuzz-email>
+ * Usage: <fuzz-email fclass="myclass" maxlength="100" emails="['gmail','yahoo','aol','hotmail','msn']" required></fuzz-email>
  */
 
 var myModule = angular.module('fuzzyEmail-ng', []);

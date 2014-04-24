@@ -18,7 +18,6 @@ Dependency
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
 <script src="js/vendor/fuzzyset.js"></script>
 <script src="js/fuzzyEmail-ng.js"></script>
-
 ```
 
 + Inject the `fuzzyEmail-ng` module into your app:

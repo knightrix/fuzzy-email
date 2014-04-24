@@ -6,5 +6,6 @@ Angular Directive for checking input email domain names correctness
 Dependency
 ---------
 
-Angular JS
-fuzzyset http://glench.github.io/fuzzyset.js/
+- [AngularJS 1.2+](https://github.com/angular/angular.js)
+- [FuzzySet] (http://glench.github.io/fuzzyset.js/)
+

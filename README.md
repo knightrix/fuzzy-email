@@ -36,6 +36,9 @@ angular.module('yourApp', ['fuzzyEmail-ng']);
 </form>
 ```
 
+## Example
+[Check out live example](http://knightrix.github.io/fuzzy-email/#example)
+
 ## Copyright and license
 
     The MIT License (MIT)

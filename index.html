@@ -7,14 +7,15 @@
     <meta name="description" content="Fuzzy-email : Angular Directive for checking input email domain names correctness" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/custom.css">
       <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
-      <script src="js/vendor/fuzzyset.js"></script>
-      <script src="js/fuzzyEmail-ng.js"></script>
+      <script src="javascripts/fuzzyset.js"></script>
+      <script src="javascripts/fuzzyEmail-ng.js"></script>
 
     <title>Fuzzy-email</title>
   </head>
 
-  <body>
+  <body ng-app="fuzzyEmail-ng">
 
     <!-- HEADER -->
     <div id="header_wrap" class="outer">
@@ -22,7 +23,7 @@
           <a id="forkme_banner" href="https://github.com/knightrix/fuzzy-email">View on GitHub</a>
 
           <h1 id="project_title">Fuzzy-email</h1>
-          <h2 id="project_tagline">Angular Directive for checking input email domain names correctness</h2>
+          <h2 id="project_tagline">Angular Directive for checking possible misspelling in email address domain names</h2>
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/knightrix/fuzzy-email/zipball/master">Download this project as a .zip file</a>
@@ -37,7 +38,7 @@
         <h1>
 <a name="fuzzy-email" class="anchor" href="#fuzzy-email"><span class="octicon octicon-link"></span></a>fuzzy-email</h1>
 
-<p>Angular Directive for checking input email domain names correctness</p>
+<p>This directive check form input for possible typo in email address domain and give you a closest matching domain name suggestion.</p>
 
 <h2>
 <a name="dependency" class="anchor" href="#dependency"><span class="octicon octicon-link"></span></a>Dependency</h2>
@@ -75,7 +76,7 @@
 
 <h2><a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
           <form>
-
+              Type in email address with wrong domain such as <em>test@gamil.com</em> or <em>test@yahooo.com</em>.
               <fuzz-email fclass="myclass" maxlength="100" emails="[
                 'gmail',
                 'yahoo',
@@ -83,7 +84,7 @@
                 'hotmail',
                 'msn'
             ]" required></fuzz-email>
-              <input name="test" id="test" type="text">
+              <input id="submit" type="button" value="Submit">
           </form>
 
 <h2>

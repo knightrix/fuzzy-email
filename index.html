@@ -7,6 +7,9 @@
     <meta name="description" content="Fuzzy-email : Angular Directive for checking input email domain names correctness" />
 
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+      <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+      <script src="js/vendor/fuzzyset.js"></script>
+      <script src="js/fuzzyEmail-ng.js"></script>
 
     <title>Fuzzy-email</title>
   </head>
@@ -69,6 +72,19 @@
 <span class="nt">&lt;/form&gt;</span>
 </pre></div>
 </blockquote>
+
+<h2><a name="example" class="anchor" href="#example"><span class="octicon octicon-link"></span></a>Example</h2>
+          <form>
+
+              <fuzz-email fclass="myclass" maxlength="100" emails="[
+                'gmail',
+                'yahoo',
+                'aol',
+                'hotmail',
+                'msn'
+            ]" required></fuzz-email>
+              <input name="test" id="test" type="text">
+          </form>
 
 <h2>
 <a name="copyright-and-license" class="anchor" href="#copyright-and-license"><span class="octicon octicon-link"></span></a>Copyright and license</h2>
